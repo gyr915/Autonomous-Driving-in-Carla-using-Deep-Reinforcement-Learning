@@ -4,7 +4,7 @@
 
 """
 
-MODEL_LOAD = False
+MODEL_LOAD = True
 SEED = 0
 BATCH_SIZE = 1
 IM_WIDTH = 160
