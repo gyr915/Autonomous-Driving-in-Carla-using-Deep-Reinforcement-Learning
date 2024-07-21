@@ -1,0 +1,1227 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.transforms",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.transforms",
+        "description": "torchvision.transforms",
+        "detail": "torchvision.transforms",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "random_split",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "random_split",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalEncoder",
+        "importPath": "encoder",
+        "description": "encoder",
+        "isExtraImport": true,
+        "detail": "encoder",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalEncoder",
+        "importPath": "encoder",
+        "description": "encoder",
+        "isExtraImport": true,
+        "detail": "encoder",
+        "documentation": {}
+    },
+    {
+        "label": "Decoder",
+        "importPath": "decoder",
+        "description": "decoder",
+        "isExtraImport": true,
+        "detail": "decoder",
+        "documentation": {}
+    },
+    {
+        "label": "Decoder",
+        "importPath": "decoder",
+        "description": "decoder",
+        "isExtraImport": true,
+        "detail": "decoder",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
+        "label": "EncodeState",
+        "importPath": "encoder_init",
+        "description": "encoder_init",
+        "isExtraImport": true,
+        "detail": "encoder_init",
+        "documentation": {}
+    },
+    {
+        "label": "EncodeState",
+        "importPath": "encoder_init",
+        "description": "encoder_init",
+        "isExtraImport": true,
+        "detail": "encoder_init",
+        "documentation": {}
+    },
+    {
+        "label": "EncodeState",
+        "importPath": "encoder_init",
+        "description": "encoder_init",
+        "isExtraImport": true,
+        "detail": "encoder_init",
+        "documentation": {}
+    },
+    {
+        "label": "EncodeState",
+        "importPath": "encoder_init",
+        "description": "encoder_init",
+        "isExtraImport": true,
+        "detail": "encoder_init",
+        "documentation": {}
+    },
+    {
+        "label": "DuelingDQnetwork",
+        "importPath": "networks.off_policy.ddqn.dueling_dqn",
+        "description": "networks.off_policy.ddqn.dueling_dqn",
+        "isExtraImport": true,
+        "detail": "networks.off_policy.ddqn.dueling_dqn",
+        "documentation": {}
+    },
+    {
+        "label": "ReplayBuffer",
+        "importPath": "networks.off_policy.replay_buffer",
+        "description": "networks.off_policy.replay_buffer",
+        "isExtraImport": true,
+        "detail": "networks.off_policy.replay_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "DQN_LEARNING_RATE",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "DQN_CHECKPOINT_DIR",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "TOWN7",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "BATCH_SIZE",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "parameters",
+        "description": "parameters",
+        "isExtraImport": true,
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "ActorCritic",
+        "importPath": "networks.on_policy.ppo.ppo",
+        "description": "networks.on_policy.ppo.ppo",
+        "isExtraImport": true,
+        "detail": "networks.on_policy.ppo.ppo",
+        "documentation": {}
+    },
+    {
+        "label": "MultivariateNormal",
+        "importPath": "torch.distributions",
+        "description": "torch.distributions",
+        "isExtraImport": true,
+        "detail": "torch.distributions",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "carla",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "carla",
+        "description": "carla",
+        "detail": "carla",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIMEOUT",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "HOST",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "RGB_CAMERA",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SSC_CAMERA",
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "isExtraImport": true,
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "carla",
+        "importPath": "simulation.connection",
+        "description": "simulation.connection",
+        "isExtraImport": true,
+        "detail": "simulation.connection",
+        "documentation": {}
+    },
+    {
+        "label": "carla",
+        "importPath": "simulation.connection",
+        "description": "simulation.connection",
+        "isExtraImport": true,
+        "detail": "simulation.connection",
+        "documentation": {}
+    },
+    {
+        "label": "ClientConnection",
+        "importPath": "simulation.connection",
+        "description": "simulation.connection",
+        "isExtraImport": true,
+        "detail": "simulation.connection",
+        "documentation": {}
+    },
+    {
+        "label": "ClientConnection",
+        "importPath": "simulation.connection",
+        "description": "simulation.connection",
+        "isExtraImport": true,
+        "detail": "simulation.connection",
+        "documentation": {}
+    },
+    {
+        "label": "CameraSensor",
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "isExtraImport": true,
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "CameraSensorEnv",
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "isExtraImport": true,
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "CollisionSensor",
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "isExtraImport": true,
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "weakref",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "weakref",
+        "description": "weakref",
+        "detail": "weakref",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "strtobool",
+        "importPath": "distutils.util",
+        "description": "distutils.util",
+        "isExtraImport": true,
+        "detail": "distutils.util",
+        "documentation": {}
+    },
+    {
+        "label": "strtobool",
+        "importPath": "distutils.util",
+        "description": "distutils.util",
+        "isExtraImport": true,
+        "detail": "distutils.util",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "PPOAgent",
+        "importPath": "networks.on_policy.ppo.agent",
+        "description": "networks.on_policy.ppo.agent",
+        "isExtraImport": true,
+        "detail": "networks.on_policy.ppo.agent",
+        "documentation": {}
+    },
+    {
+        "label": "CarlaEnvironment",
+        "importPath": "simulation.environment",
+        "description": "simulation.environment",
+        "isExtraImport": true,
+        "detail": "simulation.environment",
+        "documentation": {}
+    },
+    {
+        "label": "CarlaEnvironment",
+        "importPath": "simulation.environment",
+        "description": "simulation.environment",
+        "isExtraImport": true,
+        "detail": "simulation.environment",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "DQNAgent",
+        "importPath": "networks.off_policy.ddqn.agent",
+        "description": "networks.off_policy.ddqn.agent",
+        "isExtraImport": true,
+        "detail": "networks.off_policy.ddqn.agent",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalEncoder",
+        "importPath": "autoencoder.encoder",
+        "description": "autoencoder.encoder",
+        "isExtraImport": true,
+        "detail": "autoencoder.encoder",
+        "documentation": {}
+    },
+    {
+        "label": "Decoder",
+        "kind": 6,
+        "importPath": "autoencoder.decoder",
+        "description": "autoencoder.decoder",
+        "peekOfCode": "class Decoder(nn.Module):\n    def __init__(self, latent_dims):\n        super().__init__()\n        self.model_file = os.path.join('autoencoder/model', 'decoder_model.pth')\n        self.decoder_linear = nn.Sequential(\n            nn.Linear(latent_dims, 1024),\n            nn.LeakyReLU(),\n            nn.Linear(1024, 9 * 4 * 256),\n            nn.LeakyReLU()\n        )",
+        "detail": "autoencoder.decoder",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "autoencoder.decoder",
+        "description": "autoencoder.decoder",
+        "peekOfCode": "device = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass Decoder(nn.Module):\n    def __init__(self, latent_dims):\n        super().__init__()\n        self.model_file = os.path.join('autoencoder/model', 'decoder_model.pth')\n        self.decoder_linear = nn.Sequential(\n            nn.Linear(latent_dims, 1024),\n            nn.LeakyReLU(),\n            nn.Linear(1024, 9 * 4 * 256),\n            nn.LeakyReLU()",
+        "detail": "autoencoder.decoder",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalEncoder",
+        "kind": 6,
+        "importPath": "autoencoder.encoder",
+        "description": "autoencoder.encoder",
+        "peekOfCode": "class VariationalEncoder(nn.Module):\n    def __init__(self, latent_dims):  \n        super(VariationalEncoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_encoder_model.pth')\n        self.encoder_layer1 = nn.Sequential(\n            nn.Conv2d(3, 32, 4, stride=2),  # 79, 39\n            nn.LeakyReLU())\n        self.encoder_layer2 = nn.Sequential(\n            nn.Conv2d(32, 64, 3, stride=2, padding=1),  # 40, 20\n            nn.BatchNorm2d(64),",
+        "detail": "autoencoder.encoder",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "autoencoder.encoder",
+        "description": "autoencoder.encoder",
+        "peekOfCode": "device = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalEncoder(nn.Module):\n    def __init__(self, latent_dims):  \n        super(VariationalEncoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_encoder_model.pth')\n        self.encoder_layer1 = nn.Sequential(\n            nn.Conv2d(3, 32, 4, stride=2),  # 79, 39\n            nn.LeakyReLU())\n        self.encoder_layer2 = nn.Sequential(\n            nn.Conv2d(32, 64, 3, stride=2, padding=1),  # 40, 20",
+        "detail": "autoencoder.encoder",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalAutoencoder",
+        "kind": 6,
+        "importPath": "autoencoder.reconstructor",
+        "description": "autoencoder.reconstructor",
+        "peekOfCode": "class VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)\n        z = self.encoder(x)\n        return self.decoder(z)",
+        "detail": "autoencoder.reconstructor",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "autoencoder.reconstructor",
+        "description": "autoencoder.reconstructor",
+        "peekOfCode": "def main():\n    data_dir = 'autoencoder/dataset/'\n    test_transforms = transforms.Compose([transforms.ToTensor()])\n    test_data = datasets.ImageFolder(data_dir+'test', transform=test_transforms)\n    testloader = torch.utils.data.DataLoader(test_data, batch_size=BATCH_SIZE)\n    model = VariationalAutoencoder(latent_dims=LATENT_SPACE).to(device)\n    model.load()\n    count = 1\n    with torch.no_grad(): # No need to track the gradients\n        for x, _ in testloader:",
+        "detail": "autoencoder.reconstructor",
+        "documentation": {}
+    },
+    {
+        "label": "BATCH_SIZE",
+        "kind": 5,
+        "importPath": "autoencoder.reconstructor",
+        "description": "autoencoder.reconstructor",
+        "peekOfCode": "BATCH_SIZE = 1\nLATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):",
+        "detail": "autoencoder.reconstructor",
+        "documentation": {}
+    },
+    {
+        "label": "LATENT_SPACE",
+        "kind": 5,
+        "importPath": "autoencoder.reconstructor",
+        "description": "autoencoder.reconstructor",
+        "peekOfCode": "LATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)",
+        "detail": "autoencoder.reconstructor",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "autoencoder.reconstructor",
+        "description": "autoencoder.reconstructor",
+        "peekOfCode": "device = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)\n        z = self.encoder(x)",
+        "detail": "autoencoder.reconstructor",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalAutoencoder",
+        "kind": 6,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "class VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)\n        z = self.encoder(x)\n        return self.decoder(z)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "def train(model, trainloader, optim):\n    model.train()\n    train_loss = 0.0\n    for(x, _) in trainloader:\n        # Move tensor to the proper device\n        x = x.to(device)\n        x_hat = model(x)\n        loss = ((x - x_hat)**2).sum() + model.encoder.kl\n        optim.zero_grad()\n        loss.backward()",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "def test(model, testloader):\n    # Set evaluation mode for encoder and decoder\n    model.eval()\n    val_loss = 0.0\n    with torch.no_grad(): # No need to track the gradients\n        for x, _ in testloader:\n            # Move tensor to the proper device\n            x = x.to(device)\n            # Encode data\n            encoded_data = model.encoder(x)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "def main():\n    data_dir = 'autoencoder/dataset/'\n    writer = SummaryWriter(f\"runs/\"+\"auto-encoder\")\n    # Applying Transformation\n    train_transforms = transforms.Compose([transforms.RandomRotation(30),transforms.RandomHorizontalFlip(),transforms.ToTensor()])\n    test_transforms = transforms.Compose([transforms.ToTensor()])\n    train_data = datasets.ImageFolder(data_dir+'train', transform=train_transforms)\n    test_data = datasets.ImageFolder(data_dir+'test', transform=test_transforms)\n    m=len(train_data)\n    train_data, val_data = random_split(train_data, [int(m-m*0.2), int(m*0.2)])",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_EPOCHS",
+        "kind": 5,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "NUM_EPOCHS = 50\nBATCH_SIZE = 32\nLEARNING_RATE = 1e-4\nLATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "BATCH_SIZE",
+        "kind": 5,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "BATCH_SIZE = 32\nLEARNING_RATE = 1e-4\nLATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "LEARNING_RATE",
+        "kind": 5,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "LEARNING_RATE = 1e-4\nLATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "LATENT_SPACE",
+        "kind": 5,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "LATENT_SPACE = 95\ndevice = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "autoencoder.vae",
+        "description": "autoencoder.vae",
+        "peekOfCode": "device = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")\nclass VariationalAutoencoder(nn.Module):\n    def __init__(self, latent_dims):\n        super(VariationalAutoencoder, self).__init__()\n        self.model_file = os.path.join('autoencoder/model', 'var_autoencoder.pth')\n        self.encoder = VariationalEncoder(latent_dims)\n        self.decoder = Decoder(latent_dims)\n    def forward(self, x):\n        x = x.to(device)\n        z = self.encoder(x)",
+        "detail": "autoencoder.vae",
+        "documentation": {}
+    },
+    {
+        "label": "DQNAgent",
+        "kind": 6,
+        "importPath": "networks.off_policy.ddqn.agent",
+        "description": "networks.off_policy.ddqn.agent",
+        "peekOfCode": "class DQNAgent(object):\n    def __init__(self, n_actions):\n        self.gamma = GAMMA\n        self.alpha = DQN_LEARNING_RATE\n        self.epsilon = EPSILON\n        self.epsilon_end = EPSILON_END\n        self.action_space = [i for i in range(n_actions)]\n        self.mem_size = MEMORY_SIZE\n        self.batch_size = BATCH_SIZE\n        self.train_step = 0",
+        "detail": "networks.off_policy.ddqn.agent",
+        "documentation": {}
+    },
+    {
+        "label": "DuelingDQnetwork",
+        "kind": 6,
+        "importPath": "networks.off_policy.ddqn.dueling_dqn",
+        "description": "networks.off_policy.ddqn.dueling_dqn",
+        "peekOfCode": "class DuelingDQnetwork(nn.Module):\n    def __init__(self, n_actions, model):\n        super(DuelingDQnetwork, self).__init__()\n        self.n_actions = n_actions\n        self.checkpoint_file = os.path.join(DQN_CHECKPOINT_DIR + '/' + TOWN7, model)\n        self.Linear1 = nn.Sequential(\n            nn.Linear(95 + 5, 256),\n            nn.ReLU(),\n            nn.Linear(256, 128),\n            nn.ReLU(),",
+        "detail": "networks.off_policy.ddqn.dueling_dqn",
+        "documentation": {}
+    },
+    {
+        "label": "ReplayBuffer",
+        "kind": 6,
+        "importPath": "networks.off_policy.replay_buffer",
+        "description": "networks.off_policy.replay_buffer",
+        "peekOfCode": "class ReplayBuffer(object):\n    def __init__(self, max_size, observation, n_actions):\n        self.n_actions = n_actions\n        self.buffer_size = max_size\n        self.counter = 0\n        self.state_memory = torch.zeros((self.buffer_size, observation), dtype=torch.float32)\n        self.new_state_memory = torch.zeros((self.buffer_size, observation), dtype=torch.float32)\n        self.action_memory = torch.zeros(self.buffer_size, dtype=torch.int64)\n        self.reward_memory = torch.zeros(self.buffer_size, dtype=torch.float32)\n        self.terminal_memory = torch.zeros(self.buffer_size, dtype=torch.bool)",
+        "detail": "networks.off_policy.replay_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "Buffer",
+        "kind": 6,
+        "importPath": "networks.on_policy.ppo.agent",
+        "description": "networks.on_policy.ppo.agent",
+        "peekOfCode": "class Buffer:\n    def __init__(self):\n         # Batch data\n        self.observation = []  \n        self.actions = []         \n        self.log_probs = []     \n        self.rewards = []         \n        self.dones = []\n    def clear(self):\n        del self.observation[:]    ",
+        "detail": "networks.on_policy.ppo.agent",
+        "documentation": {}
+    },
+    {
+        "label": "PPOAgent",
+        "kind": 6,
+        "importPath": "networks.on_policy.ppo.agent",
+        "description": "networks.on_policy.ppo.agent",
+        "peekOfCode": "class PPOAgent(object):\n    def __init__(self, town, action_std_init=0.4):\n        #self.env = env\n        self.obs_dim = 100\n        self.action_dim = 2\n        self.clip = POLICY_CLIP\n        self.gamma = GAMMA\n        self.n_updates_per_iteration = 7\n        self.lr = PPO_LEARNING_RATE\n        self.action_std = action_std_init",
+        "detail": "networks.on_policy.ppo.agent",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "networks.on_policy.ppo.agent",
+        "description": "networks.on_policy.ppo.agent",
+        "peekOfCode": "device = torch.device(\"cpu\")\nclass Buffer:\n    def __init__(self):\n         # Batch data\n        self.observation = []  \n        self.actions = []         \n        self.log_probs = []     \n        self.rewards = []         \n        self.dones = []\n    def clear(self):",
+        "detail": "networks.on_policy.ppo.agent",
+        "documentation": {}
+    },
+    {
+        "label": "ActorCritic",
+        "kind": 6,
+        "importPath": "networks.on_policy.ppo.ppo",
+        "description": "networks.on_policy.ppo.ppo",
+        "peekOfCode": "class ActorCritic(nn.Module):\n    def __init__(self, obs_dim, action_dim, action_std_init):\n        super(ActorCritic, self).__init__()\n        self.obs_dim = obs_dim\n        self.action_dim = action_dim\n        self.device = torch.device(\"cpu\")\n        # Create our variable for the matrix.\n        # Note that I chose 0.2 for stdev arbitrarily.\n        self.cov_var = torch.full((self.action_dim,), action_std_init)\n        # Create the covariance matrix",
+        "detail": "networks.on_policy.ppo.ppo",
+        "documentation": {}
+    },
+    {
+        "label": "ClientConnection",
+        "kind": 6,
+        "importPath": "simulation.connection",
+        "description": "simulation.connection",
+        "peekOfCode": "class ClientConnection:\n    def __init__(self, town):\n        self.client = None\n        self.town = town\n    def setup(self):\n        try:\n            # Connecting to the  Server\n            self.client = carla.Client(HOST, PORT)\n            self.client.set_timeout(TIMEOUT)\n            self.world = self.client.load_world(self.town)",
+        "detail": "simulation.connection",
+        "documentation": {}
+    },
+    {
+        "label": "CarlaEnvironment",
+        "kind": 6,
+        "importPath": "simulation.environment",
+        "description": "simulation.environment",
+        "peekOfCode": "class CarlaEnvironment():\n    def __init__(self, client, world, town, checkpoint_frequency=100, continuous_action=True) -> None:\n        self.client = client\n        self.world = world\n        self.blueprint_library = self.world.get_blueprint_library()\n        self.map = self.world.get_map()\n        self.action_space = self.get_discrete_action_space()\n        self.continous_action_space = continuous_action\n        self.display_on = VISUAL_DISPLAY\n        self.vehicle = None",
+        "detail": "simulation.environment",
+        "documentation": {}
+    },
+    {
+        "label": "CameraSensor",
+        "kind": 6,
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "peekOfCode": "class CameraSensor():\n    def __init__(self, vehicle):\n        self.sensor_name = SSC_CAMERA\n        self.parent = vehicle\n        self.front_camera = list()\n        world = self.parent.get_world()\n        self.sensor = self._set_camera_sensor(world)\n        weak_self = weakref.ref(self)\n        self.sensor.listen(\n            lambda image: CameraSensor._get_front_camera_data(weak_self, image))",
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "CameraSensorEnv",
+        "kind": 6,
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "peekOfCode": "class CameraSensorEnv:\n    def __init__(self, vehicle):\n        pygame.init()\n        self.display = pygame.display.set_mode((720, 720),pygame.HWSURFACE | pygame.DOUBLEBUF)\n        self.sensor_name = RGB_CAMERA\n        self.parent = vehicle\n        self.surface = None\n        world = self.parent.get_world()\n        self.sensor = self._set_camera_sensor(world)\n        weak_self = weakref.ref(self)",
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "CollisionSensor",
+        "kind": 6,
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "peekOfCode": "class CollisionSensor:\n    def __init__(self, vehicle) -> None:\n        self.sensor_name = 'sensor.other.collision'\n        self.parent = vehicle\n        self.collision_data = list()\n        world = self.parent.get_world()\n        self.sensor = self._set_collision_sensor(world)\n        weak_self = weakref.ref(self)\n        self.sensor.listen(\n            lambda event: CollisionSensor._on_collision(weak_self, event))",
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
+        "label": "HOST",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "HOST = \"localhost\"\nPORT = 2000\nTIMEOUT = 20.0\nCAR_NAME = 'model3'\nEPISODE_LENGTH = 120\nNUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "PORT = 2000\nTIMEOUT = 20.0\nCAR_NAME = 'model3'\nEPISODE_LENGTH = 120\nNUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIMEOUT",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "TIMEOUT = 20.0\nCAR_NAME = 'model3'\nEPISODE_LENGTH = 120\nNUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CAR_NAME",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "CAR_NAME = 'model3'\nEPISODE_LENGTH = 120\nNUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EPISODE_LENGTH",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "EPISODE_LENGTH = 120\nNUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NUMBER_OF_VEHICLES",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "NUMBER_OF_VEHICLES = 30\nNUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NUMBER_OF_PEDESTRIAN",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "NUMBER_OF_PEDESTRIAN = 150\nCONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CONTINUOUS_ACTION",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "CONTINUOUS_ACTION = True\nVISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VISUAL_DISPLAY",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "VISUAL_DISPLAY = True\nRGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "RGB_CAMERA",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "RGB_CAMERA = 'sensor.camera.rgb'\nSSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SSC_CAMERA",
+        "kind": 5,
+        "importPath": "simulation.settings",
+        "description": "simulation.settings",
+        "peekOfCode": "SSC_CAMERA = 'sensor.camera.semantic_segmentation'",
+        "detail": "simulation.settings",
+        "documentation": {}
+    },
+    {
+        "label": "parse_args",
+        "kind": 2,
+        "importPath": "continuous_driver",
+        "description": "continuous_driver",
+        "peekOfCode": "def parse_args():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('--exp-name', type=str, help='name of the experiment')\n    parser.add_argument('--env-name', type=str, default='carla', help='name of the simulation environment')\n    parser.add_argument('--learning-rate', type=float, default=PPO_LEARNING_RATE, help='learning rate of the optimizer')\n    parser.add_argument('--seed', type=int, default=SEED, help='seed of the experiment')\n    parser.add_argument('--total-timesteps', type=int, default=TOTAL_TIMESTEPS, help='total timesteps of the experiment')\n    parser.add_argument('--action-std-init', type=float, default=ACTION_STD_INIT, help='initial exploration noise')\n    parser.add_argument('--test-timesteps', type=int, default=TEST_TIMESTEPS, help='timesteps to test our model')\n    parser.add_argument('--episode-length', type=int, default=EPISODE_LENGTH, help='max timesteps in an episode')",
+        "detail": "continuous_driver",
+        "documentation": {}
+    },
+    {
+        "label": "boolean_string",
+        "kind": 2,
+        "importPath": "continuous_driver",
+        "description": "continuous_driver",
+        "peekOfCode": "def boolean_string(s):\n    if s not in {'False', 'True'}:\n        raise ValueError('Not a valid boolean string')\n    return s == 'True'\ndef runner():\n    #========================================================================\n    #                           BASIC PARAMETER & LOGGING SETUP\n    #========================================================================\n    args = parse_args()\n    exp_name = args.exp_name",
+        "detail": "continuous_driver",
+        "documentation": {}
+    },
+    {
+        "label": "runner",
+        "kind": 2,
+        "importPath": "continuous_driver",
+        "description": "continuous_driver",
+        "peekOfCode": "def runner():\n    #========================================================================\n    #                           BASIC PARAMETER & LOGGING SETUP\n    #========================================================================\n    args = parse_args()\n    exp_name = args.exp_name\n    train = args.train\n    town = args.town\n    checkpoint_load = args.load_checkpoint\n    total_timesteps = args.total_timesteps",
+        "detail": "continuous_driver",
+        "documentation": {}
+    },
+    {
+        "label": "parse_args",
+        "kind": 2,
+        "importPath": "discrete_driver",
+        "description": "discrete_driver",
+        "peekOfCode": "def parse_args():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('--exp-name', type=str, help='name of the experiment')\n    parser.add_argument('--env-name', type=str, default='carla', help='name of the simulation environment')\n    parser.add_argument('--learning-rate', type=float, default=DQN_LEARNING_RATE, help='learning rate of the optimizer')\n    parser.add_argument('--seed', type=int, default=SEED, help='seed of the experiment')\n    parser.add_argument('--total-episodes', type=int, default=EPISODES, help='total timesteps of the experiment')\n    parser.add_argument('--train', type=bool, default=True, help='is it training?')\n    parser.add_argument('--town', type=str, default=\"Town07\", help='which town do you like?')\n    parser.add_argument('--load-checkpoint', type=bool, default=MODEL_LOAD, help='resume training?')",
+        "detail": "discrete_driver",
+        "documentation": {}
+    },
+    {
+        "label": "runner",
+        "kind": 2,
+        "importPath": "discrete_driver",
+        "description": "discrete_driver",
+        "peekOfCode": "def runner():\n    #========================================================================\n    #                           BASIC PARAMETER & LOGGING SETUP\n    #========================================================================\n    args = parse_args()\n    exp_name = args.exp_name\n    try:\n        if exp_name == 'ddqn':\n            run_name = f\"DDQN\"\n    except Exception as e:",
+        "detail": "discrete_driver",
+        "documentation": {}
+    },
+    {
+        "label": "EncodeState",
+        "kind": 6,
+        "importPath": "encoder_init",
+        "description": "encoder_init",
+        "peekOfCode": "class EncodeState():\n    def __init__(self, latent_dim):\n        self.latent_dim = latent_dim\n        self.device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n        try:\n            self.conv_encoder = VariationalEncoder(self.latent_dim).to(self.device)\n            self.conv_encoder.load()\n            self.conv_encoder.eval()\n            for params in self.conv_encoder.parameters():\n                params.requires_grad = False",
+        "detail": "encoder_init",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_LOAD",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "MODEL_LOAD = True\nSEED = 0\nBATCH_SIZE = 1\nIM_WIDTH = 160\nIM_HEIGHT = 80\nGAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "SEED = 0\nBATCH_SIZE = 1\nIM_WIDTH = 160\nIM_HEIGHT = 80\nGAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "BATCH_SIZE",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "BATCH_SIZE = 1\nIM_WIDTH = 160\nIM_HEIGHT = 80\nGAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "IM_WIDTH",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "IM_WIDTH = 160\nIM_HEIGHT = 80\nGAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "IM_HEIGHT",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "IM_HEIGHT = 80\nGAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "GAMMA",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "GAMMA = 0.99\nMEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "MEMORY_SIZE",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "MEMORY_SIZE = 5000\nEPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "EPISODES",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "EPISODES = 1000\n#VAE Bottleneck\nLATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "LATENT_DIM",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "LATENT_DIM = 95\n#Dueling DQN (hyper)parameters\nDQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "DQN_LEARNING_RATE",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "DQN_LEARNING_RATE = 0.0001\nEPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "EPSILON",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "EPSILON = 1.00\nEPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "EPSILON_END",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "EPSILON_END = 0.05\nEPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "EPSILON_DECREMENT",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "EPSILON_DECREMENT = 0.00001\nREPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "REPLACE_NETWORK",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "REPLACE_NETWORK = 5\nDQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  ",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "DQN_CHECKPOINT_DIR",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "DQN_CHECKPOINT_DIR = 'preTrained_models/ddqn'\nMODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_ONLINE",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "MODEL_ONLINE = 'carla_dueling_dqn_online.pth'\nMODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_TARGET",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "MODEL_TARGET = 'carla_dueling_dqn_target.pth'\n#Proximal Policy Optimization (hyper)parameters\nEPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "EPISODE_LENGTH",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "EPISODE_LENGTH = 7500\nTOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "TOTAL_TIMESTEPS",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "TOTAL_TIMESTEPS = 2e9\nACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "ACTION_STD_INIT",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "ACTION_STD_INIT = 0.2\nTEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_TIMESTEPS",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "TEST_TIMESTEPS = 5e4\nPPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "PPO_LEARNING_RATE",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "PPO_LEARNING_RATE = 1e-4  \nPPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "PPO_CHECKPOINT_DIR",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "PPO_CHECKPOINT_DIR = 'preTrained_models/ppo/'\nPOLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    },
+    {
+        "label": "POLICY_CLIP",
+        "kind": 5,
+        "importPath": "parameters",
+        "description": "parameters",
+        "peekOfCode": "POLICY_CLIP = 0.2",
+        "detail": "parameters",
+        "documentation": {}
+    }
+]

@@ -59,7 +59,7 @@ class CarlaEnvironment():
             vehicle_bp = self.get_vehicle(CAR_NAME)
 
             if self.town == "Town07":
-                transform = self.map.get_spawn_points()[38] #Town7  is 38 
+                transform = self.map.get_spawn_points()[4] #Town7  is 4
                 self.total_distance = 750
             elif self.town == "Town02":
                 transform = self.map.get_spawn_points()[1] #Town2 is 1
