@@ -39,7 +39,7 @@ class VariationalAutoencoder(nn.Module):
         self.decoder.save()
     
     def load(self):
-        self.load_state_dict(torch.load(self.model_file))
+        self.load_state_dict(torch.load((self.model_file), map_location=torch.device('cpu')))
         self.encoder.load()
         self.decoder.load()
 
