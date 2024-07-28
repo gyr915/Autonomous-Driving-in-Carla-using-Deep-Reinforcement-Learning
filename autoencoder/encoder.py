@@ -41,6 +41,19 @@ class VariationalEncoder(nn.Module):
         self.N.scale = self.N.scale.to(device)
         self.kl = 0
 
+    # def forward(self, x):
+    #     x = x.to(device)
+    #     x = self.encoder_layer1(x)
+    #     x = self.encoder_layer2(x)
+    #     x = self.encoder_layer3(x)
+    #     x = self.encoder_layer4(x)
+    #     x = torch.flatten(x, start_dim=1)
+    #     x = self.linear(x)
+    #     mu =  self.mu(x)
+    #     sigma = torch.exp(self.sigma(x))
+    #     z = mu + sigma*self.N.sample(mu.shape)
+    #     self.kl = (sigma**2 + mu**2 - torch.log(sigma) - 1/2).sum()
+    #     return z
     def forward(self, x):
         x = x.to(device)
         x = self.encoder_layer1(x)
@@ -49,10 +62,9 @@ class VariationalEncoder(nn.Module):
         x = self.encoder_layer4(x)
         x = torch.flatten(x, start_dim=1)
         x = self.linear(x)
-        mu =  self.mu(x)
-        sigma = torch.exp(self.sigma(x))
-        z = mu + sigma*self.N.sample(mu.shape)
-        self.kl = (sigma**2 + mu**2 - torch.log(sigma) - 1/2).sum()
+        # Here we directly use the output of the linear layer as the latent variable `z`
+        z = self.mu(x)  # Using `self.mu` just to keep the variable name, not applying VAE operations
+        self.kl = 0  # KL divergence is zero since we don't perform VAE
         return z
 
     def save(self):
