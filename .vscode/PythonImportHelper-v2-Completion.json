@@ -461,6 +461,14 @@
         "documentation": {}
     },
     {
+        "label": "RGBCameraSensor",
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "isExtraImport": true,
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -476,6 +484,15 @@
         "importPath": "weakref",
         "description": "weakref",
         "detail": "weakref",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
         "documentation": {}
     },
     {
@@ -838,11 +855,20 @@
         "documentation": {}
     },
     {
+        "label": "RGBCameraSensor",
+        "kind": 6,
+        "importPath": "simulation.sensors",
+        "description": "simulation.sensors",
+        "peekOfCode": "class RGBCameraSensor():\n    def __init__(self, vehicle):\n        pygame.init()\n        self.display = pygame.display.set_mode((640, 320),pygame.HWSURFACE | pygame.DOUBLEBUF)\n        self.sensor_name = RGB_CAMERA\n        self.parent = vehicle\n        self.surface2 = None\n        self.rgb_camera = list()\n        world = self.parent.get_world()\n        self.sensor = self._set_rgb_camera(world)",
+        "detail": "simulation.sensors",
+        "documentation": {}
+    },
+    {
         "label": "CameraSensorEnv",
         "kind": 6,
         "importPath": "simulation.sensors",
         "description": "simulation.sensors",
-        "peekOfCode": "class CameraSensorEnv:\n    def __init__(self, vehicle):\n        pygame.init()\n        self.display = pygame.display.set_mode((720, 720),pygame.HWSURFACE | pygame.DOUBLEBUF)\n        self.sensor_name = RGB_CAMERA\n        self.parent = vehicle\n        self.surface = None\n        world = self.parent.get_world()\n        self.sensor = self._set_camera_sensor(world)\n        weak_self = weakref.ref(self)",
+        "peekOfCode": "class CameraSensorEnv:\n    def __init__(self, vehicle):\n        pygame.init()\n        self.display = pygame.display.set_mode((1360, 720),pygame.HWSURFACE | pygame.DOUBLEBUF)\n        self.sensor_name = RGB_CAMERA\n        self.parent = vehicle\n        self.surface1 = None\n        world = self.parent.get_world()\n        self.sensor = self._set_camera_sensor(world)\n        weak_self = weakref.ref(self)",
         "detail": "simulation.sensors",
         "documentation": {}
     },

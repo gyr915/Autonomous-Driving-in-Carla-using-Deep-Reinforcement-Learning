@@ -2,6 +2,7 @@ import math
 import numpy as np
 import weakref
 import pygame
+import cv2
 from simulation.connection import carla
 from simulation.settings import RGB_CAMERA, SSC_CAMERA
 
@@ -30,6 +31,7 @@ class CameraSensor():
         front_camera_bp.set_attribute('fov', f'125')
         front_camera = world.spawn_actor(front_camera_bp, carla.Transform(
             carla.Location(x=2.4, z=1.5), carla.Rotation(pitch= -10)), attach_to=self.parent)
+        print(front_camera)
         return front_camera
 
     @staticmethod
@@ -43,6 +45,50 @@ class CameraSensor():
         target = placeholder1[:, :, :3]
         self.front_camera.append(target)#/255.0)
 
+class RGBCameraSensor():
+    
+    def __init__(self, vehicle):
+        pygame.init()
+        self.display = pygame.display.set_mode((640, 320),pygame.HWSURFACE | pygame.DOUBLEBUF)
+        self.sensor_name = RGB_CAMERA
+        self.parent = vehicle
+        self.surface2 = None
+        self.rgb_camera = list()
+        world = self.parent.get_world()
+        self.sensor = self._set_rgb_camera(world)
+        weak_self = weakref.ref(self)
+        self.sensor.listen(
+            lambda image: RGBCameraSensor._get_rgb_camera_data(weak_self, image))
+
+    def _set_rgb_camera(self, world):
+        rgb_camera_bp = world.get_blueprint_library().find(self.sensor_name)
+        rgb_camera_bp.set_attribute('image_size_x', '640')
+        rgb_camera_bp.set_attribute('image_size_y', '320')
+        rgb_camera_bp.set_attribute('fov', '125')
+        rgb_camera = world.spawn_actor(rgb_camera_bp, carla.Transform(
+            carla.Location(x=2.4, z=1.5), carla.Rotation(pitch=0)), attach_to=self.parent)
+        print(rgb_camera)
+        return rgb_camera
+
+    @staticmethod
+    def _get_rgb_camera_data(weak_self, image):
+        self = weak_self()
+        if not self:
+            print('No self')
+            return
+        image.convert(carla.ColorConverter.Raw)
+        rgb_image = np.frombuffer(image.raw_data, dtype=np.dtype("uint8"))
+        rgb_image = rgb_image.reshape((image.height, image.width, 4))
+        rgb_image = rgb_image[:, :, :3]  # Drop the alpha channel
+        self.rgb_camera.append(rgb_image)
+        rgb_image = rgb_image[:, :, ::-1]
+        self.surface2 = pygame.surfarray.make_surface(rgb_image.swapaxes(0, 1))
+        self.display.blit(self.surface2, (720, 0))
+        pygame.display.flip()
+        # cv2.imshow("",rgb_image)
+        # cv2.waitKey(10)
+        
+        # Here you would pass rgb_image to your YOLO model for detection
 
 # ---------------------------------------------------------------------|
 # ------------------------------- ENV CAMERA |
@@ -53,10 +99,10 @@ class CameraSensorEnv:
     def __init__(self, vehicle):
 
         pygame.init()
-        self.display = pygame.display.set_mode((720, 720),pygame.HWSURFACE | pygame.DOUBLEBUF)
+        self.display = pygame.display.set_mode((1360, 720),pygame.HWSURFACE | pygame.DOUBLEBUF)
         self.sensor_name = RGB_CAMERA
         self.parent = vehicle
-        self.surface = None
+        self.surface1 = None
         world = self.parent.get_world()
         self.sensor = self._set_camera_sensor(world)
         weak_self = weakref.ref(self)
@@ -82,8 +128,8 @@ class CameraSensorEnv:
         placeholder1 = array.reshape((image.width, image.height, 4))
         placeholder2 = placeholder1[:, :, :3]
         placeholder2 = placeholder2[:, :, ::-1]
-        self.surface = pygame.surfarray.make_surface(placeholder2.swapaxes(0, 1))
-        self.display.blit(self.surface, (0, 0))
+        self.surface1 = pygame.surfarray.make_surface(placeholder2.swapaxes(0, 1))
+        self.display.blit(self.surface1, (0, 0))
         pygame.display.flip()
 
 
