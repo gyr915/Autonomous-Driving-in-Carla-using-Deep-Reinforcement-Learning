@@ -83,7 +83,7 @@ class RGBCameraSensor():
         self.rgb_camera.append(rgb_image)
         rgb_image = rgb_image[:, :, ::-1]
         YOLO_detection = self._YOLO_detection(rgb_image)
-        self.surface2 = pygame.surfarray.make_surface(rgb_image.swapaxes(0, 1))
+        self.surface2 = pygame.surfarray.make_surface(YOLO_detection.swapaxes(0, 1))
         self.display.blit(self.surface2, (720, 0))
         pygame.display.flip()
         # cv2.imshow("",rgb_image)
@@ -95,9 +95,9 @@ class RGBCameraSensor():
         model = YOLO("yolov8n.pt")
         results = model(rgb_image)
         annotated_frame = results[0].plot()
-        cv2.imshow("", annotated_frame)
-        cv2.waitKey(10)
-        return results
+        # cv2.imshow("", annotated_frame)
+        # cv2.waitKey(10)
+        return annotated_frame
 
 # ---------------------------------------------------------------------|
 # ------------------------------- ENV CAMERA |
