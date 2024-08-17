@@ -5,7 +5,7 @@ import pygame
 import cv2
 from simulation.connection import carla
 from simulation.settings import RGB_CAMERA, SSC_CAMERA
-
+from ultralytics import YOLO
 
 # ---------------------------------------------------------------------|
 # ------------------------------- CAMERA |
@@ -82,6 +82,7 @@ class RGBCameraSensor():
         rgb_image = rgb_image[:, :, :3]  # Drop the alpha channel
         self.rgb_camera.append(rgb_image)
         rgb_image = rgb_image[:, :, ::-1]
+        YOLO_detection = self._YOLO_detection(rgb_image)
         self.surface2 = pygame.surfarray.make_surface(rgb_image.swapaxes(0, 1))
         self.display.blit(self.surface2, (720, 0))
         pygame.display.flip()
@@ -89,6 +90,14 @@ class RGBCameraSensor():
         # cv2.waitKey(10)
         
         # Here you would pass rgb_image to your YOLO model for detection
+
+    def _YOLO_detection(self, rgb_image):
+        model = YOLO("yolov8n.pt")
+        results = model(rgb_image)
+        annotated_frame = results[0].plot()
+        cv2.imshow("", annotated_frame)
+        cv2.waitKey(10)
+        return results
 
 # ---------------------------------------------------------------------|
 # ------------------------------- ENV CAMERA |
