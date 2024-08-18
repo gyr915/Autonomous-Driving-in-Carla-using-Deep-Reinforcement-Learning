@@ -31,7 +31,7 @@ class CameraSensor():
         front_camera_bp.set_attribute('fov', f'125')
         front_camera = world.spawn_actor(front_camera_bp, carla.Transform(
             carla.Location(x=2.4, z=1.5), carla.Rotation(pitch= -10)), attach_to=self.parent)
-        print(front_camera)
+        # print(front_camera)
         return front_camera
 
     @staticmethod
@@ -53,6 +53,7 @@ class RGBCameraSensor():
         self.sensor_name = RGB_CAMERA
         self.parent = vehicle
         self.surface2 = None
+        self.model = YOLO("yolov8n.pt")
         self.rgb_camera = list()
         world = self.parent.get_world()
         self.sensor = self._set_rgb_camera(world)
@@ -67,7 +68,7 @@ class RGBCameraSensor():
         rgb_camera_bp.set_attribute('fov', '125')
         rgb_camera = world.spawn_actor(rgb_camera_bp, carla.Transform(
             carla.Location(x=2.4, z=1.5), carla.Rotation(pitch=0)), attach_to=self.parent)
-        print(rgb_camera)
+        # print(rgb_camera)
         return rgb_camera
 
     @staticmethod
@@ -92,8 +93,7 @@ class RGBCameraSensor():
         # Here you would pass rgb_image to your YOLO model for detection
 
     def _YOLO_detection(self, rgb_image):
-        model = YOLO("yolov8n.pt")
-        results = model(rgb_image)
+        results = self.model(rgb_image)
         annotated_frame = results[0].plot()
         # cv2.imshow("", annotated_frame)
         # cv2.waitKey(10)

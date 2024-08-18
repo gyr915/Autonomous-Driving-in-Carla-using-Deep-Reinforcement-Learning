@@ -77,8 +77,8 @@ class CarlaEnvironment():
             self.camera_obj = CameraSensor(self.vehicle)
             while(len(self.camera_obj.front_camera) == 0):
                 time.sleep(0.0001)
-                print("Waiting for camera sensor to be ready")
-                print(self.camera_obj.front_camera)
+                #print("Waiting for camera sensor to be ready")
+                #print(self.camera_obj.front_camera)
             self.image_obs = self.camera_obj.front_camera.pop(-1)
             self.sensor_list.append(self.camera_obj.sensor)
             print("Camera sensor is ready")
@@ -86,8 +86,8 @@ class CarlaEnvironment():
             self.rgb_camera_obj = RGBCameraSensor(self.vehicle)
             while(len(self.rgb_camera_obj.rgb_camera) == 0):
                 time.sleep(0.0001)
-                print("Waiting for rgb camera sensor to be ready")
-                print(self.rgb_camera_obj.rgb_camera)
+                #print("Waiting for rgb camera sensor to be ready")
+                #print(self.rgb_camera_obj.rgb_camera)
             self.rgb_image_obs = self.rgb_camera_obj.rgb_camera.pop(-1)
             self.sensor_list.append(self.rgb_camera_obj.sensor)
             print("RGB Camera sensor is ready")
