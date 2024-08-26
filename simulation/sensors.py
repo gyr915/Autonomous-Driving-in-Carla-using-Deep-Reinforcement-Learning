@@ -45,7 +45,7 @@ class CameraSensor():
         target = placeholder1[:, :, :3]
         self.front_camera.append(target)#/255.0)
 
-class RGBCameraSensor():
+class L_RGBCameraSensor():
     
     def __init__(self, vehicle):
         pygame.init()
@@ -59,7 +59,7 @@ class RGBCameraSensor():
         self.sensor = self._set_rgb_camera(world)
         weak_self = weakref.ref(self)
         self.sensor.listen(
-            lambda image: RGBCameraSensor._get_rgb_camera_data(weak_self, image))
+            lambda image: L_RGBCameraSensor._get_L_rgb_camera_data(weak_self, image))
 
     def _set_rgb_camera(self, world):
         rgb_camera_bp = world.get_blueprint_library().find(self.sensor_name)
@@ -67,15 +67,15 @@ class RGBCameraSensor():
         rgb_camera_bp.set_attribute('image_size_y', '320')
         rgb_camera_bp.set_attribute('fov', '125')
         rgb_camera = world.spawn_actor(rgb_camera_bp, carla.Transform(
-            carla.Location(x=2.4, z=1.5), carla.Rotation(pitch=0)), attach_to=self.parent)
+            carla.Location(x=2.4,y=-0.3, z=1.5), carla.Rotation(pitch=0)), attach_to=self.parent)
         # print(rgb_camera)
         return rgb_camera
 
     @staticmethod
-    def _get_rgb_camera_data(weak_self, image):
+    def _get_L_rgb_camera_data(weak_self, image):
         self = weak_self()
         if not self:
-            print('No self')
+            print('No L self')
             return
         image.convert(carla.ColorConverter.Raw)
         rgb_image = np.frombuffer(image.raw_data, dtype=np.dtype("uint8"))
@@ -99,6 +99,58 @@ class RGBCameraSensor():
         # cv2.waitKey(10)
         return annotated_frame
 
+class R_RGBCameraSensor():
+    def __init__(self, vehicle):
+        pygame.init()
+        self.display = pygame.display.set_mode((640, 320),pygame.HWSURFACE | pygame.DOUBLEBUF)
+        self.sensor_name = RGB_CAMERA
+        self.parent = vehicle
+        self.surface2 = None
+        #self.model = YOLO("yolov8n.pt")
+        self.rgb_camera = list()
+        world = self.parent.get_world()
+        self.sensor = self._set_rgb_camera(world)
+        weak_self = weakref.ref(self)
+        self.sensor.listen(
+            lambda image: R_RGBCameraSensor._get_R_rgb_camera_data(weak_self, image))
+
+    def _set_rgb_camera(self, world):
+        rgb_camera_bp = world.get_blueprint_library().find(self.sensor_name)
+        rgb_camera_bp.set_attribute('image_size_x', '640')
+        rgb_camera_bp.set_attribute('image_size_y', '320')
+        rgb_camera_bp.set_attribute('fov', '125')
+        rgb_camera = world.spawn_actor(rgb_camera_bp, carla.Transform(
+            carla.Location(x=2.4, y=0.3, z=1.5), carla.Rotation(pitch=0)), attach_to=self.parent)
+        # print(rgb_camera)
+        return rgb_camera
+
+    @staticmethod
+    def _get_R_rgb_camera_data(weak_self, image):
+        self = weak_self()
+        if not self:
+            print('No R self')
+            return
+        image.convert(carla.ColorConverter.Raw)
+        rgb_image = np.frombuffer(image.raw_data, dtype=np.dtype("uint8"))
+        rgb_image = rgb_image.reshape((image.height, image.width, 4))
+        rgb_image = rgb_image[:, :, :3]  # Drop the alpha channel
+        self.rgb_camera.append(rgb_image)
+        rgb_image = rgb_image[:, :, ::-1]
+        #YOLO_detection = self._YOLO_detection(rgb_image)
+        self.surface2 = pygame.surfarray.make_surface(rgb_image.swapaxes(0, 1))
+        self.display.blit(self.surface2, (720, 320))
+        pygame.display.flip()
+        # cv2.imshow("",rgb_image)
+        # cv2.waitKey(10)
+        
+        # Here you would pass rgb_image to your YOLO model for detection
+
+    # def _YOLO_detection(self, rgb_image):
+    #     results = self.model(rgb_image)
+    #     annotated_frame = results[0].plot()
+    #     # cv2.imshow("", annotated_frame)
+    #     # cv2.waitKey(10)
+    #     return annotated_frame
 # ---------------------------------------------------------------------|
 # ------------------------------- ENV CAMERA |
 # ---------------------------------------------------------------------|

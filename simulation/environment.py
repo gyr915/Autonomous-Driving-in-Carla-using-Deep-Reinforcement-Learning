@@ -3,7 +3,7 @@ import random
 import numpy as np
 import pygame
 from simulation.connection import carla
-from simulation.sensors import CameraSensor, CameraSensorEnv, CollisionSensor, RGBCameraSensor
+from simulation.sensors import CameraSensor, CameraSensorEnv, CollisionSensor, L_RGBCameraSensor, R_RGBCameraSensor
 from simulation.settings import *
 
 
@@ -33,7 +33,8 @@ class CarlaEnvironment():
         self.env_camera_obj = None
         self.collision_obj = None
         self.lane_invasion_obj = None
-        self.rgb_camera_obj = None
+        self.L_rgb_camera_obj = None
+        self.R_rgb_camera_obj = None
 
         # Two very important lists for keeping track of our actors and their observations.
         self.sensor_list = list()
@@ -83,14 +84,23 @@ class CarlaEnvironment():
             self.sensor_list.append(self.camera_obj.sensor)
             print("Camera sensor is ready")
 
-            self.rgb_camera_obj = RGBCameraSensor(self.vehicle)
-            while(len(self.rgb_camera_obj.rgb_camera) == 0):
+            self.L_rgb_camera_obj = L_RGBCameraSensor(self.vehicle)
+            while(len(self.L_rgb_camera_obj.rgb_camera) == 0):
                 time.sleep(0.0001)
                 #print("Waiting for rgb camera sensor to be ready")
-                #print(self.rgb_camera_obj.rgb_camera)
-            self.rgb_image_obs = self.rgb_camera_obj.rgb_camera.pop(-1)
-            self.sensor_list.append(self.rgb_camera_obj.sensor)
-            print("RGB Camera sensor is ready")
+                #print(self.L_rgb_camera_obj.rgb_camera)
+            self.rgb_image_obs = self.L_rgb_camera_obj.rgb_camera.pop(-1)
+            self.sensor_list.append(self.L_rgb_camera_obj.sensor)
+            print("L_RGB Camera sensor is ready")
+
+            self.R_rgb_camera_obj = R_RGBCameraSensor(self.vehicle)
+            while(len(self.R_rgb_camera_obj.rgb_camera) == 0):
+                time.sleep(0.0001)
+                #print("Waiting for rgb camera sensor to be ready")
+                #print(self.L_rgb_camera_obj.rgb_camera)
+            self.rgb_image_obs = self.R_rgb_camera_obj.rgb_camera.pop(-1)
+            self.sensor_list.append(self.R_rgb_camera_obj.sensor)
+            print("R_RGB Camera sensor is ready")
 
             # Third person view of our vehicle in the Simulated env
             if self.display_on:
@@ -296,11 +306,11 @@ class CarlaEnvironment():
 
             while(len(self.camera_obj.front_camera) == 0):
                 time.sleep(0.0001)
-            while(len(self.rgb_camera_obj.rgb_camera) == 0):
+            while(len(self.L_rgb_camera_obj.rgb_camera) == 0):
                 time.sleep(0.0001)
 
             self.image_obs = self.camera_obj.front_camera.pop(-1)
-            self.rgb_image_obs = self.rgb_camera_obj.rgb_camera.pop(-1)
+            self.rgb_image_obs = self.L_rgb_camera_obj.rgb_camera.pop(-1)
             normalized_velocity = self.velocity/self.target_speed
             normalized_distance_from_center = self.distance_from_center / self.max_distance_from_center
             normalized_angle = abs(self.angle / np.deg2rad(20))
@@ -492,7 +502,7 @@ class CarlaEnvironment():
     # Clean up method
     def remove_sensors(self):
         self.camera_obj = None
-        self.rgb_camera_obj = None
+        self.L_rgb_camera_obj = None
         self.collision_obj = None
         self.lane_invasion_obj = None
         self.env_camera_obj = None
